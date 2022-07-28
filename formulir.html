@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulir pemesanan</title>
+    <link href="formulir.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li ><a href="HOME.html">HOME</a></li>
+            <li><a href="tabel.html">DAFTAR MENU</a></li>
+            <li class="active"><a href="formulir.html">FORMULIR PEMESANAN</a></li>
+            <li><a href="logout.html">LOGOUT</a></li>
+        </ul>
+        <div class="logo">
+            <img src="https://www.bing.com/th?id=OIP.FXtuFm-zS-QwvOtA0Gg_MwHaIR&w=236&h=264&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" width="60px" height=60px" align="left"></i>
+        </div>
+        <h3>relax<br>COFFEE</h3>
+        <h4>Niluh Nia Devi<br>F55121058
+        </h4> 
+    </header>
+    <form>
+        <tr>
+            <td colspan="3" align="center">
+                <h2>Order Pesanan coffee</h2>
+            </td>
+        </tr>
+        <table>
+        <tr>
+            <td>Nama Pemesan</td>
+            <td align="center"> : </td>
+            <td colspan="2"><input type="text" class="pesan" name="nama Pemesan" id="Nama"/></td>
+        </tr>
+        <tr>
+            <td>Jumlah Pesanan</td>
+            <td align="center"> : </td>
+            <td colspan="2"><input type="number" class="pesan" name="Pesanan" id="Jumlah"/></td>
+        </tr>
+        <tr>
+            <td>Alamat Penerima</td>
+            <td align="center"> : </td>
+            <td colspan="2"><input type="text" class="pesan" name="ttl" id="Alamat"/></td>
+        </tr>
+        <tr>
+            <td>No.Handphone</td>
+            <td align="center"> : </td>
+            <td colspan="2"><input type="number" class="pesan" name="handphone" id="HP"/></td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center">
+                Pilih Jenis Kopi :
+            </td>
+        <tr>
+            <td> Cappucino</td>
+            <td><input type="checkbox" name="vehicle" value="cappucino" id="kopi" /> </td>
+            <td align="right">Latte </td>
+            <td><input type="checkbox" name="vehicle" value="Latte" id="kopi" /></td>
+        </tr>
+        <tr>
+            <td>Arabica</td>
+            <td><input type="checkbox" name="vehicle" value="Arabica" id="kopi"/></td>
+            <td align="right">Kopi Mocha</td>
+            <td><input type="checkbox" name="vehicle" value="Kopi Mocha" id="kopi"/></td>
+        </tr>
+        <tr>
+            <td>Kopi Luwak</td>
+            <td><input type="checkbox" name="vehicle" value="Kopi Luwak" id="kopi"/></td>
+            <td align="right">Robusta</td>
+            <td><input type="checkbox" name="vehicle" value="Robusta" id="kopi"/></td>
+        </tr>
+        <tr>
+            <td>Esspresso Macchiato </td>
+            <td><input type="checkbox" name="vehicle" value="Esspresso Macchiato" id="kopi"/></td>
+            <td align="right">Kopi Susu </td>
+            <td><input type="checkbox" name="vehicle" value="Kopi Susu" id="kopi"/></td>
+        </tr>
+        <tr>
+            <td>Americano</td>
+            <td><input type="checkbox" name="vehicle" value="Americano" id="kopi"/></td>
+            <td align="right">Kopi Gula Aren</td>
+            <td><input type="checkbox" name="vehicle" value="Kopi Gula Aren" id="kopi"/></td>
+        </tr>
+            <tr>
+                <td colspan="3" align="center">
+                   <button  type="button" onclick="formulir()" value="buat pesanan">Pesan</button>
+                    <input type="reset" value="reset"/> 
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        function formulir() {
+          var Nama = document.querySelector('#Nama').value
+          console.log(Nama)
+  
+          var Jumlah = document.querySelector('#Jumlah').value
+          console.log(Jumlah)
+  
+          var Alamat = document.querySelector('#Alamat').value
+          console.log(Alamat)
+  
+          var HP = document.querySelector('#HP').value
+          console.log(HP)
+  
+          var kopi = document.querySelector('#kopi').value
+          console.log(kopi)
+
+          if (Nama == "" || Jumlah == "" || Alamat==""|| HP == ""|| kopi=="" ) {
+            swal("mohon maaf data harus terisi semua!!");
+          } else {
+            swal({
+              title: "Telah Terpesan!",
+              text: "silahkan Menunggu pesanan anda sampai pada Tujuan!",
+              icon: "success",
+            });
+          }
+        }
+      </script>
+</body>
+</html>

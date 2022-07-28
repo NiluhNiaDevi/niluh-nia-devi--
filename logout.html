@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN Website</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+<body>
+        <div class="container">
+            <div class="login">
+                <form  action="#">
+                    <h1>LOGIN</h1>
+                    <hr>
+                    <LABEL>Username</LABEL>
+                    <input type="text" id="username" placeholder="ketikkan username"/>
+                    <br>
+                    <LABEL>Password</LABEL>
+                    <input type="password" id="password" placeholder="ketikkan password"/>
+                </form>
+                <button onclick="validasi()">Log In</button>
+            </div>
+            <div class="right">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.12Fv6yp90CAr1Aitqm1nRQHaE7%26pid%3DApi&f=1" alt="">
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script>
+            function validasi(){
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+
+                if(username == "" || password == ""){
+                    swal("Username dan Password tidak boleh Kosong!!");
+                    
+                }
+                else{
+                    swal({
+                    title: "SELAMAT!",
+                    text: "Kamu Berhasil Masuk!",
+                    icon: "success",
+
+                    }).then((Selesai) => {
+                        if (Selesai) {
+                            window.location.href = "HOME.html";
+                        }
+                    });
+                }
+            }
+        </script>
+</body>
+</html>

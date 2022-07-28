@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Kopi</title>
+    <link rel="stylesheet" href="tabel.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"/>
+ 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+    <header>
+        <ul>
+            <li ><a href="HOME.html">HOME</a></li>
+            <li><a href="tabel.html">DAFTAR MENU</a></li>
+            <li class="active"><a href="formulir.html">FORMULIR PEMESANAN</a></li>
+            <li><a href="logout.html">LOGOUT</a></li>
+        </ul>
+        <div class="logo">
+            <img src="https://www.bing.com/th?id=OIP.FXtuFm-zS-QwvOtA0Gg_MwHaIR&w=236&h=264&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" width="60px" height=60px" align="left"></i>
+        </div>
+        <h3>relax<br>COFFEE</h3>
+        <h4>Niluh Nia Devi<br>F55121058
+        </h4> 
+    </header>
+    <theader>
+        <nav></nav>
+        <main>
+            <table id="tabelkopi" class="display">
+                <thead>
+                    <tr>
+                        <th>NAMA PEMBELI</th>
+                        <TH>JENIS COFFEE</TH>
+                        <th>HARGA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Abib Raifmuafah</td>
+                        <td>Cappucino</td>
+                        <td>18K</td>
+                    </tr>
+                    <tr>
+                        <td>Abib Raifmuafah</td>
+                        <td>Latte</td>
+                        <td>20K</td>
+                    </tr>
+                    <tr>
+                        <td>Rivaldi</td>
+                        <td>Kopi Susu</td>
+                        <td>18K</td>
+                    </tr>
+                    <tr>
+                        <td>Andika</td>
+                        <td>kopi Mocha</td>
+                        <td>22K</td>
+                    </tr>
+                    <tr>
+                        <td>Rivaldi</td>
+                        <td>Americano</td>
+                        <td>16K</td>
+                    </tr>
+                    <tr>
+                        <td>Isra Septia</td>
+                        <td>Cappucino</td>
+                        <td>20K</td>
+                    </tr>
+                    <tr>
+                        <td>Isra Septia</td>
+                        <td>Esspresso macchiato</td>
+                        <td>18K</td>
+                    </tr>
+                    <tr>
+                        <td>Afifa Wulandari</td>
+                        <td>Robusta</td>
+                        <td>15K</td>
+                    </tr>
+                    <tr>
+                        <td>Abib Raifmuafah</td>
+                        <td>Kopi Luwak</td>
+                        <td>20K</td>
+                    </tr>
+                    <tr>
+                        <td>Nia Devi</td>
+                        <td>Cappucino</td>
+                        <td>20K</td>
+                    </tr>
+                    <tr>
+                        <td>Nia Devi</td>
+                        <td>Arabica</td>
+                        <td>15K</td>
+                    </tr>
+                    <tr>
+                        <td>Niluh Nia</td>
+                        <td>Kopi Gula aren</td>
+                        <td>15K</td>
+                    </tr>
+                    <tr>
+                        <td>Nia devi</td>
+                        <td>Latte</td>
+                        <td>18K</td>
+                    </tr>
+                    <tr>
+                        <td>Afifa Wulandari</td>
+                        <td>Arabica</td>
+                        <td>15K</td>
+                    </tr>
+                    <tr>
+                        <td>Ades Sinta</td>
+                        <td>kopi Mocha</td>
+                        <td>22k</td>
+                    </tr>
+                    <tr>
+                        <td>Ades Sinta</td>
+                        <td>Cappucino</td>
+                        <td>20K</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <script>
+           $(document).ready(function() {
+            $("#tabelkopi").DataTable();
+           });
+        </script>
+    </theader>
+</body>
+</html>

@@ -1,0 +1,65 @@
+body{
+    font-family: sans-serif;
+    background-color:antiquewhite;
+    background-size: cover;
+
+}
+.logo{
+    float:left ;
+    padding-left: 0;
+    background-color: antiquewhite;
+}
+header{
+    display: block;
+}
+h2{
+    padding-top: 6px;
+    font-size: 20px;
+    color:chocolate;
+}
+h4{
+    padding-top:-5px;
+    color:black;
+    padding-bottom: 0px;
+}
+header ul{
+     float:right;
+}
+header ul li {
+    display: inline-block;
+}
+header ul li a{
+   padding: 20px 20px;
+   color:sandybrown;
+   font-size: 20px;
+}
+header ul li a:hover{
+    background-color:chocolate;
+    color:antiquewhite;
+}
+.active{
+    background-color: chocolate;
+    color:antiquewhite;
+}
+h2{
+    text-align: center;
+    font-family:inherit;
+    font-size: 30px;
+    padding: 0;
+    color:chartreuse;
+}
+table {
+    background-color: white;
+    border: 10px;
+    margin-left: 100px;
+}
+th{
+    color:darkblue;
+    font-size: 25px;
+    padding: 20px 40px;
+    text-align: center;
+}
+tr{
+    background-color:wheat;
+    font-size: 18px;
+}
